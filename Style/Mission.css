@@ -1,0 +1,88 @@
+.mission{
+    height: 450px;
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    border-radius: 2rem;
+}
+
+
+.mission .content{
+    width: 85%;
+    height: 100%;
+}
+
+.mission .m_texts{
+    flex-direction: column;
+    color: var(--light);
+    align-items: flex-start;
+    width: 60%;
+}
+
+.mission .anime{
+    height: 100%;
+    width: 40%;
+}
+
+.mission h1{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.mission h1 span{
+    text-decoration: underline;
+}
+
+.mission p{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.mission button{
+    width: 350px;
+    height: 70px;
+    border-radius: 3rem;
+    background-color: var(--purple);
+    color: var(--light);
+    font-size: 25px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.mission button:hover{
+    background-color: var(--purple-hover);
+}
+
+@media screen and (max-width:1200px){
+    .mission{
+        height: 100%;
+    }
+    .mission .content{
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        align-items: flex-start;
+    }
+    .mission .anime{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .mission{
+        margin-top: 5rem;
+    }
+    .mission .content{
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .mission .content .m_texts{
+        width: 100%;
+    }
+    .mission button{
+        width: 100%;
+    }
+    .mission .anime{
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+.feelTheReel{
+    width: 100%;
+    padding: 0 1.5rem;
+    color: var(--dark);
+    /* background-color: var(--light); */
+}
+
+.feelTheReel h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.feelTheReel p{
+    text-align: center;
+    font-size: 25px;
+    margin: 2rem 0;
+}
+
+.video{
+    position: relative;
+}
+
+.video img:first-child{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.video img:last-child{
+    position: absolute;
+}
+
+.video-added{
+    overflow: hidden;
+    /* 16:9 aspect ration (9/16 = 0.5625) */
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: var(--dark);
+}

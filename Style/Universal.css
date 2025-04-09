@@ -1,0 +1,81 @@
+:root{
+    --dark: #0e0e0e;
+    --light: #ffffff;
+    --purple: #b58cf9;
+    --ppurple-hover: #814adb;
+    --gold: #fff1a1;
+    --box1: #82ffbb;
+    --box2:#ffeaa3;
+    --box3: #7feefe;
+    --box4: #b58cf9;
+}
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost",sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text,.text * {
+    font-family: "IBM Plex Mono",monospace;
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--light);
+    transition: background .5s ease-in-out;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+/* Animation */
+
+p,h1,h2,h3,a,button{
+    transform: translateY(50%);
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.show{
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+}
